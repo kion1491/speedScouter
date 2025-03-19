@@ -14,8 +14,10 @@ h1{
     font-size: 28px;
 }
 .ad_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 130px;
 }
 .speed {
     font-size: 42px;
