@@ -37,7 +37,7 @@ const speedChart = new Chart(ctx, {
 });
 
 async function measureSpeed() {
-    const testFile = "http://ipv4.download.thinkbroadband.com/10MB.zip"; // 파일 사용
+    const testFile = "https://ipv4.download.thinkbroadband.com/10MB.zip"; // 파일 사용
     const fileSize = 10 * 1024 * 1024; // 약 10MB
     const startTime = performance.now();
     try {
