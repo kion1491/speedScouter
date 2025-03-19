@@ -37,9 +37,8 @@ const speedChart = new Chart(ctx, {
 });
 
 async function measureSpeed() {
-    const testFile = "https://proof.ovh.net/files/10Mb.dat";
-    const fileSize = 10 * 1024 * 1024; // 10MB
-
+    const testFile = "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg"; // 작은 파일 사용
+    const fileSize = 250 * 1024; // 약 250KB
     const startTime = performance.now();
     try {
         const response = await fetch(testFile, { cache: "no-store" });
