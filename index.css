@@ -4,21 +4,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
     background-color: #111;
     color: white;
     font-family: Arial, sans-serif;
 }
-
+h1{
+    font-size: 28px;
+}
 .speed {
-    font-size: 3rem;
+    font-size: 42px;
     font-weight: bold;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 canvas {
     margin-top: 20px;
-    width: 80vw;
-    height: 300px;
+    width: 100% !important;
+    max-width: 800px !important;
+    height: auto !important;
 }

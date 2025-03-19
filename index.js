@@ -17,16 +17,23 @@ const speedChart = new Chart(ctx, {
         }],
     },
     options: {
-        responsive: true,
+        responsive: false, // 반응형 해제
+        maintainAspectRatio: false, // 종횡비 유지 X
+        width: 600, // 차트 너비 (Canvas 크기와 맞춰야 함)
+        height: 400, // 차트 높이
         scales: {
             x: {
                 title: {
-                    display: true,
-                    text: "시간"
+                    display: false // X축 제목 숨김
+                },
+                ticks: {
+                    display: false // X축 라벨 숨김
                 }
             },
             y: {
-                beginAtZero: true,
+                ticks: {
+                    display: false // X축 라벨 숨김
+                },
                 title: {
                     display: true,
                     text: "Mbps"
