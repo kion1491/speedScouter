@@ -13,6 +13,9 @@ body {
 h1{
     font-size: 28px;
 }
+.ad_box{
+    width: 100%;
+}
 .speed {
     font-size: 42px;
     font-weight: bold;
