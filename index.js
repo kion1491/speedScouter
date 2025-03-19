@@ -47,7 +47,7 @@ async function measureSpeed() {
         if (!response.ok) throw new Error("파일을 가져올 수 없습니다.");
         const timeTaken = (endTime - startTime) / 1000; // 초 단위 변환
         const speedMbps = (fileSize / timeTaken / 1024 / 1024 * 8).toFixed(2); // Mbps 변환
-        document.querySelector(".speed").textContent = ${ speedMbps } Mbps;
+        document.querySelector(".speed").textContent = `${speedMbps} Mbps`;
         updateChart(parseFloat(speedMbps));
     } catch (error) {
         console.error("인터넷 속도 측정 오류:", error);
